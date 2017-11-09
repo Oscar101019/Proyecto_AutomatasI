@@ -75,7 +75,7 @@ public class VentanaER extends javax.swing.JFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
-        jLabel5.setText("Introdusca cadena a validar: ");
+        jLabel5.setText("Introdusca la cadena a validar: ");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
         jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -116,7 +116,7 @@ public class VentanaER extends javax.swing.JFrame {
                     break;
                 }
                 if(ER.expresion2(dato) >=1 ){
-                    showMessageDialog(null,"La cadena no es valida");
+                    showMessageDialog(null,"La cadena es invalida");
                     break;
                 }
                 showMessageDialog(null,"La cadena es valida");
@@ -124,7 +124,7 @@ public class VentanaER extends javax.swing.JFrame {
             }
             case 3:{
                 if(txtValidar.getText().isEmpty()==true){
-                    showMessageDialog(null,"La cadena no es valida");
+                    showMessageDialog(null,"La cadena es invalida");
                     break;
                 }
                 if((valor.equals("cc")) || (valor.equals("dd")) || (valor.equals("cd"))
@@ -134,7 +134,7 @@ public class VentanaER extends javax.swing.JFrame {
                     showMessageDialog(null,"La cadena es valida");
                     break;
                 }
-                showMessageDialog(null,"La cadena no es valida");
+                showMessageDialog(null,"La cadena es invalida");
             }
             
         }
